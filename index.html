@@ -77,8 +77,10 @@
 <pre>
 <code>// You can get the type of variable in this way
 $type = gettype( $foo );
+
 // Then you check if it is an array
 if( 'array' == $type ) { /* todos */ }
+
 // However, in that way, you force a string compare and the 'array' string could be change in next future
 // So, look the right way
 if( is_array( $foo ) ) { /* todos */ };
