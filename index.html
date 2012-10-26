@@ -31,7 +31,7 @@
 <div id="content-wrapper">
     <div class="inner clearfix">
         <section id="main-content">
-            <h3>Welcome to wpXtreme Pages.</h3>
+            <h2>Welcome to wpXtreme Pages.</h2>
 
             <p>wpXtreme is a powerful tool to enhance your Wordpress experience. Just by downloading one free plugin you
                will get a lot of improvements to the WordPress core and you will gain access to the WPX Store, the first
@@ -71,13 +71,17 @@
                                                       only thing you will have to check is
                                                       your dashboard.</p>
 
-            <h3>Code of week</h3>
+            <h2>Codetip of week</h2>
 
-            <p>This week let me show how to...</p>
+            <p>This week let me show how to check the type of variable.</p>
 <pre><code>
-    $ cd your_repo_root/repo_name
-    $ git fetch origin
-    $ git checkout gh-pages
+// You can get the type of variable in this way
+$type = gettype( $foo );
+// Then you check if it is an array
+if( 'array' == $type ) { /* todos */ }
+// However, in that way, you force a string compare and the 'array' string could be change in next future
+// So, look the right way
+if( is_array( $foo ) ) { /* todos */ };
 </code></pre>
         </section>
 
