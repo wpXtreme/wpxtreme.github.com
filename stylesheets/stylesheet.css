@@ -380,6 +380,10 @@ img.left {
     margin-right: 16px;
 }
 
+img.small {
+    max-width: 64px;
+}
+
 
 
 /* #Media Queries
